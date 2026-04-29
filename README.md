@@ -135,7 +135,7 @@ MIT License - feel free to use for educational purposes
 
 ## Author
 
-Natalia Arseniuk - [LinkedIn](www.linkedin.com/in/natalia-arseniuk/)
+Natalia Arseniuk - LinkedIn: www.linkedin.com/in/natalia-arseniuk/
 
 ## Acknowledgments
 
