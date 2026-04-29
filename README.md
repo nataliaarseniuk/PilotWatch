@@ -90,3 +90,57 @@ python src/drone_control_app.py
 - **Performance**: 88% validation accuracy
 
 ## Project Structure
+
+PilotWatch/
+├── src/
+│   ├── collect_presence_data.py    # Data collection script
+│   ├── train_presence_model.py     # Model training
+│   └── drone_control_app.py        # Main application
+├── pilot_presence_dataset/         # Demo images
+├── requirements.txt                # Python dependencies
+└── README.md
+
+## Hardware Integration
+
+The system integrates with RadioMaster Pocket via CRSF protocol over USB serial. While the serial connection works, RF transmission operates independently and would require firmware configuration or hardware interlock for physical drone control.
+
+## Challenges & Learnings
+
+This project went through multiple iterations:
+
+1. **Gesture Recognition** (Failed) - 33% accuracy, gestures too similar
+2. **Face Authentication** (Overfitted) - 99% validation, 0% real-world
+3. **Presence Detection** (Success) - Simple binary classification that works
+
+**Key Lessons:**
+- Data quality > quantity
+- Validation metrics ≠ real-world performance
+- Iterative development is essential in ML
+
+## Future Improvements
+
+- [ ] Larger, more diverse dataset (1000+ images)
+- [ ] Multi-pilot authentication (recognize specific individuals)
+- [ ] Flight controller integration for automatic disarming
+- [ ] Mobile app version
+- [ ] Cloud logging and analytics
+
+## Demo
+
+https://www.youtube.com/watch?v=V858oQNAw4g
+
+## License
+
+MIT License - feel free to use for educational purposes
+
+## Author
+
+Natalia Arseniuk - [LinkedIn](www.linkedin.com/in/natalia-arseniuk/)
+
+## Acknowledgments
+
+Built as part of COMP4949 Assignment 2 - Big Data Analytics
+
+---
+
+**Questions or suggestions? Feel free to open an issue!**
