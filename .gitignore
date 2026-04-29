@@ -1,0 +1,29 @@
+# Model files (too large)
+*.h5
+*.keras
+*.pb
+
+# Dataset
+pilot_presence_dataset/
+*.jpg
+*.png
+*.jpeg
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+venv/
+env/
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Training outputs
+*.log
+training_history/
